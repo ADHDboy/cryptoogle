@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Site</title>
+<link href="style_sheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<button class="centre" onclick="myFunction()">Enter Crypto Wallet</button>
+				
+			<h1>Bitcoin Wallet Address</h1>
+			<h3 id="walleta" 3>Enter Bitcoin Address</h3>
+
+	<div class="websitetable" >
+	<table id="websitetable" align="center">
+		<thead>
+			<tr>
+				<td></td>
+				<td>Website</td>
+				<td>Discription</td>
+				<td>Link&nbsp; &nbsp;</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td>Blockchain</td>
+				<td>Blockchain information for Bitcoin (BTC) including historical prices, the most recently mined blocks, the mempool size of unconfirmed transactions, and data for the latest transactions.</td>
+				<td id="cryptosite001"></td>
+		  </tr>
+		   <tr>
+				<td></td>
+				<td>Google</td>
+				<td>Open Source investigation tool</td>
+				<td id="cryptosite002"></td>
+		  </tr>
+		  	<tr>
+			<td></td>
+			<td>Crystal Block Chain</td>
+			<td>Cyptocurrecy Visualisation Tool</td>
+			<td id="cryptosite003"></td>
+	  		</tr>
+			
+			<tr>
+			<td></td>
+			<td>Block Path</td>
+			<td>Cyptocurrecy Visualisation Tool</td>
+			<td id="cryptosite004"></td>
+			</tr>
+
+			<tr>
+			<td></td>
+			<td>OXT</td>
+			<td>Cyptocurrecy Visualisation Tool</td>
+			<td id="cryptosite005"></td>
+			</tr>	
+
+			<tr>
+			<td></td>
+			<td>Bitcoin Whos Who</td>
+			<td>D</td>
+			<td id="cryptosite006"></td>
+			</tr>
+
+			<tr>
+			<td></td>
+			<td>Bit Info Charts</td>
+			<td>D</td>
+			<td id="cryptosite007"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>BTC.com</td>
+				<td>D</td>
+				<td id="cryptosite008"></td>
+				</tr>
+
+			<tr>
+				<td></td>
+				<td>Wallet Explorer</td>
+				<td>D</td>
+				<td id="cryptosite009"></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>Block Chair</td>
+					<td>D</td>
+					<td id="cryptosite010"></td>
+					</tr>
+
+
+		</tbody>
+	
+	</table>
+	</div>
+	
+<script>
+	
+		const cryptosite001 = "https://www.blockchain.com/btc/address/"
+		const cryptosite002 = "https://www.google.co.uk/search?q="
+		const cryptosite003 = "https://explorer.crystalblockchain.com/visualization/new/"
+		const cryptosite004 = "https://blockpath.com/search/addr?q="
+		const cryptosite005 = "https://oxt.me/address/"
+		const cryptosite006 = "https://www.bitcoinwhoswho.com/address/"
+		const cryptosite007 = "https://bitinfocharts.com/bitcoin/address/"
+		const cryptosite008 = "https://btc.com/btc/address/"
+		const cryptosite009 = "https://www.walletexplorer.com/address/"
+		const cryptosite010 = "https://blockchair.com/bitcoin/address/"
+
+		const hyper1 = "<a href='"
+		const hyper2 = "' target='_blank'>Link</a>"
+		
+		
+	 	function myFunction() {
+		var pName = prompt("what is the crypto");
+		const cAddress = pName;
+		document.getElementById("walleta").innerHTML = (cAddress);
+		document.getElementById("cryptosite001").innerHTML = (hyper1+cryptosite001+cAddress+hyper2);
+		document.getElementById("cryptosite002").innerHTML = (hyper1+cryptosite002+cAddress+hyper2);
+		document.getElementById("cryptosite003").innerHTML = (hyper1+cryptosite003+cAddress+hyper2);
+		document.getElementById("cryptosite004").innerHTML = (hyper1+cryptosite004+cAddress+hyper2);
+		document.getElementById("cryptosite005").innerHTML = (hyper1+cryptosite005+cAddress+hyper2);
+		document.getElementById("cryptosite006").innerHTML = (hyper1+cryptosite006+cAddress+hyper2);
+		document.getElementById("cryptosite007").innerHTML = (hyper1+cryptosite007+cAddress+hyper2);
+		document.getElementById("cryptosite008").innerHTML = (hyper1+cryptosite008+cAddress+hyper2);
+		document.getElementById("cryptosite009").innerHTML = (hyper1+cryptosite009+cAddress+hyper2);
+		document.getElementById("cryptosite010").innerHTML = (hyper1+cryptosite010+cAddress+hyper2);
+		
+	}
+	
+	
+</script>
+
+	
+
+	
+</body>
+</html>
